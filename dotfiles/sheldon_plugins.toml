@@ -7,3 +7,6 @@ github = "zsh-users/zsh-autosuggestions"
 # コマンドのシンタックスハイライト（色付け）
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
+
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
