@@ -1,8 +1,11 @@
 [alias]
+	br = branch
+	f = fetch
 	sw = switch
-	cm = commit
+	st = status
+	cm = commit -m
 	co = checkout
-	b = branch
+	la = log --oneline --decorate --graph --branches --tags --remotes --all
 [user]
 	name = toms3776c
 	email = 24806125+toms3776c@users.noreply.github.com
