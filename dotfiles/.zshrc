@@ -1,3 +1,12 @@
+# ---------- 履歴 ----------
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=100000
+SAVEHIST=100000
+setopt SHARE_HISTORY        # 複数ターミナル間で履歴共有
+setopt HIST_IGNORE_DUPS     # 直前と同じコマンドは記録しない
+setopt HIST_IGNORE_SPACE    # 先頭スペース付きコマンドは記録しない
+setopt HIST_REDUCE_BLANKS
+
 # ==========================================
 # ツールとプラグインの初期化
 # ==========================================
