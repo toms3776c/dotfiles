@@ -1,0 +1,10 @@
+[alias]
+	sw = switch
+	cm = commit
+	co = checkout
+	b = branch
+[user]
+	name = toms3776c
+	email = 24806125+toms3776c@users.noreply.github.com
+[init]
+	defaultBranch = main
