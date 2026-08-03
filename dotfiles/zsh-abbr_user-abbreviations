@@ -3,3 +3,6 @@ abbr "ll"="eza -aahl --icons --git"
 abbr "lla"="eza -a --icons --git"
 abbr "l"="eza -l --icons --git"
 abbr "lll"="ls -l --color=auto"
+
+abbr "bud"="brew update"
+abbr "bug"="brew upgrade"
