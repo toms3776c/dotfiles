@@ -35,6 +35,8 @@ ln -sf $(pwd)/dotfiles/.gitconfig ~/.gitconfig
 ln -sf $(pwd)/dotfiles/.vimrc ~/.vimrc
 mkdir -p ~/.config/sheldon
 ln -sf $(pwd)/dotfiles/sheldon_plugins.toml ~/.config/sheldon/plugins.toml
+mkdir -p ~/.config/zsh-abbr
+ln -sf $(pwd)/dotfiles/zsh-abbr_user-abbreviations ~/.config/zsh-abbr/user-abbreviations
 ```
 
 その後、設定を反映します。
