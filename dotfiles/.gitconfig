@@ -11,3 +11,5 @@
 	email = 24806125+toms3776c@users.noreply.github.com
 [init]
 	defaultBranch = main
+[ghq]
+	root = /Users/tomo/src_git
