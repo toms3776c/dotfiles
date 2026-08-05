@@ -46,13 +46,10 @@ fzf-zoxide-cd() {
         zle reset-prompt
     fi
 }
-
 # 3. Zshのウィジェットとして登録
 zle -N fzf-zoxide-cd
-
 # 4. Ctrl + Q (^q) にバインド
 bindkey '^q' fzf-zoxide-cd
-
 # 5. zsh + fzf で「あの時作業していたあのブランチ」を快適に探す https://www.mizdra.net/entry/2024/10/19/172323
 # fzf のデフォルトのオプション。お好みで。ここでは peco っぽくなるよう調整してる。
 export FZF_DEFAULT_OPTS="--reverse --no-sort --no-hscroll --preview-window=down"
@@ -75,6 +72,19 @@ function select-git-branch-friendly() {
 }
 zle -N select-git-branch-friendly
 bindkey '^b' select-git-branch-friendly
+
+# ghqで取得したリポジトリを検索してディレクトリ移動する
+# https://zenn.dev/arm_techblog/articles/ea9560facb7c09
+function cdghq() {
+    moveto=$(ghq root)/$(ghq list | fzf)
+
+    if [[ "${moveto}" != "$(ghq root)/" ]]
+    then
+       cd $moveto
+    fi
+}
+zle -N cdghq
+bindkey '^g' cdghq
 
 # mise
 eval "$(mise activate zsh)"
