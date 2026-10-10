@@ -39,6 +39,8 @@ mkdir -p ~/.config/zsh-abbr
 ln -sf $(pwd)/dotfiles/zsh-abbr_user-abbreviations ~/.config/zsh-abbr/user-abbreviations
 
 ln -sf $(pwd)/dotfiles/starship.toml ~/.config/starship.toml
+
+ln -sf $(pwd)/dotfiles/mise_config.toml ~/.config/mise/config.toml
 ```
 
 その後、設定を反映します。

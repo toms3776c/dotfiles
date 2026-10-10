@@ -1,0 +1,29 @@
+[settings]
+minimum_release_age = "8d"
+experimental = true
+disable_backends = ["asdf", "vfox"]
+npm.package_manager = "bun"
+pipx.uvx = true
+
+[tools]
+aube = "latest"
+aws-vault = "latest"
+awscli = { version = "latest", symlink_bins = "true" }
+bun = "latest"
+claude-code = "latest"
+codex = "latest"
+deno = "latest"
+go = "latest"
+node = "lts"
+"npm:@hono/cli" = "latest"
+pipx = "latest"
+"pipx:git-remote-codecommit" = "latest"
+"pipx:snowflake-cli" = "latest"
+pnpm = "latest"
+python = "3.14"
+task = "latest"
+terraform = "latest"
+terragrunt = "latest"
+tflint = "latest"
+uv = "latest"
+yt-dlp = { version = "latest", rename_exe = "yt-dlp" }
