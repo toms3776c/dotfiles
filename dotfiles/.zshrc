@@ -6,6 +6,10 @@ setopt SHARE_HISTORY        # 複数ターミナル間で履歴共有
 setopt HIST_IGNORE_DUPS     # 直前と同じコマンドは記録しない
 setopt HIST_IGNORE_SPACE    # 先頭スペース付きコマンドは記録しない
 setopt HIST_REDUCE_BLANKS
+# 過去に実行したコマンドと同じものがあれば、古い方を削除して新しい方を残す
+setopt hist_ignore_all_dups
+# 履歴の保存上限に達したとき、まず重複しているものから削除する
+setopt hist_expire_dups_first
 
 # ==========================================
 # ツールとプラグインの初期化
